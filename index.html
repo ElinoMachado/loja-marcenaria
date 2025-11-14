@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marcenaria Sob Medida</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="logo">
+          <span class="logo-icon">🪚</span>
+          <span class="logo-text">Marcenaria Sob Medida</span>
+        </div>
+        <nav class="nav">
+          <a href="#portfolio">Portfólio</a>
+          <a href="#custom">Móvel Sob Medida</a>
+          <a href="#summary">Resumo</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="hero" class="section hero">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>Móveis planejados para a sua casa, com cuidado de artesão.</h1>
+            <p>
+              Veja trabalhos já realizados, monte seu móvel sob medida,
+              visualize em 3D e envie seu pedido direto pelo WhatsApp.
+            </p>
+            <div class="hero-actions">
+              <a href="#portfolio" class="btn primary">Ver Portfólio</a>
+              <a href="#custom" class="btn secondary">Criar meu móvel</a>
+            </div>
+          </div>
+          <div class="hero-badge">
+            <p class="badge-title">Móveis personalizados</p>
+            <p class="badge-sub">Portfólio + orçamento rápido</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTFÓLIO -->
+      <section id="portfolio" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Portfólio de Móveis</h2>
+            <p>Alguns móveis personalizados já produzidos.</p>
+          </header>
+
+          <div id="portfolioGrid" class="portfolio-grid">
+            <!-- Cards preenchidos via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- MÓVEL SOB MEDIDA / FORMULÁRIO -->
+      <section id="custom" class="section section-alt">
+        <div class="container">
+          <header class="section-header">
+            <h2>Monte seu Móvel Sob Medida</h2>
+            <p>
+              Preencha os dados, veja o volume em 3D e receba um valor de
+              referência.
+            </p>
+          </header>
+
+          <form id="customForm" class="card form-card">
+            <!-- Dados do cliente -->
+            <div class="form-section">
+              <h3>1. Seus dados</h3>
+              <div class="form-grid">
+                <label>
+                  Nome completo
+                  <input
+                    type="text"
+                    id="clientName"
+                    required
+                    placeholder="Seu nome"
+                  />
+                </label>
+                <label>
+                  Telefone / WhatsApp
+                  <input
+                    type="tel"
+                    id="clientPhone"
+                    placeholder="(DDD) 99999-9999"
+                  />
+                </label>
+                <label class="full">
+                  Endereço completo
+                  <textarea
+                    id="clientAddress"
+                    rows="2"
+                    placeholder="Rua, número, bairro, cidade"
+                  ></textarea>
+                </label>
+              </div>
+            </div>
+
+            <!-- Dados do móvel -->
+            <div class="form-section">
+              <h3>2. Dados do móvel</h3>
+              <div class="form-grid">
+                <label>
+                  Tipo de móvel
+                  <select id="furnitureType">
+                    <option value="Guarda-roupa">Guarda-roupa</option>
+                    <option value="Painel para TV">Painel para TV</option>
+                    <option value="Armário de cozinha">
+                      Armário de cozinha
+                    </option>
+                    <option value="Escrivaninha">Escrivaninha</option>
+                    <option value="Bancada / Aparador">
+                      Bancada / Aparador
+                    </option>
+                    <option value="Nichos e prateleiras">
+                      Nichos e prateleiras
+                    </option>
+                    <option value="Outro">Outro</option>
+                  </select>
+                </label>
+
+                <label>
+                  Ambiente
+                  <select id="roomType">
+                    <option value="Sala">Sala</option>
+                    <option value="Quarto">Quarto</option>
+                    <option value="Cozinha">Cozinha</option>
+                    <option value="Escritório">Escritório</option>
+                    <option value="Área de serviço">Área de serviço</option>
+                  </select>
+                </label>
+
+                <label class="full">
+                  Observações / uso do móvel
+                  <textarea
+                    id="notes"
+                    rows="2"
+                    placeholder="Ex.: espaço para TV 55'', nicho para micro-ondas, etc."
+                  ></textarea>
+                </label>
+              </div>
+            </div>
+
+            <!-- Medidas -->
+            <div class="form-section">
+              <h3>3. Medidas (em centímetros)</h3>
+              <div class="form-grid">
+                <label>
+                  Largura (cm)
+                  <input
+                    type="number"
+                    id="widthCm"
+                    min="30"
+                    value="120"
+                    required
+                  />
+                </label>
+                <label>
+                  Altura (cm)
+                  <input
+                    type="number"
+                    id="heightCm"
+                    min="40"
+                    value="200"
+                    required
+                  />
+                </label>
+                <label>
+                  Profundidade (cm)
+                  <input
+                    type="number"
+                    id="depthCm"
+                    min="20"
+                    value="40"
+                    required
+                  />
+                </label>
+              </div>
+            </div>
+
+            <!-- Material / acabamento -->
+            <div class="form-section">
+              <h3>4. Material e acabamento</h3>
+              <div class="form-grid">
+                <label>
+                  Material
+                  <select id="material">
+                    <option value="mdf-branco">MDF branco</option>
+                    <option value="mdf-madeirado">MDF madeirado premium</option>
+                    <option value="madeira-macica">
+                      Madeira maciça (quando disponível)
+                    </option>
+                  </select>
+                </label>
+                <label>
+                  Acabamento
+                  <select id="finish">
+                    <option value="fosco">Fosco</option>
+                    <option value="semi-brilho">Semi-brilho</option>
+                    <option value="alto-brilho">Alto brilho</option>
+                  </select>
+                </label>
+                <label>
+                  Complexidade
+                  <select id="complexity">
+                    <option value="simples">
+                      Simples (few portas / nichos)
+                    </option>
+                    <option value="medio" selected>
+                      Médio (portas + prateleiras)
+                    </option>
+                    <option value="alto">
+                      Alto (gavetas, portas, divisões variadas)
+                    </option>
+                  </select>
+                </label>
+              </div>
+            </div>
+
+            <!-- Preview + orçamento -->
+            <div class="form-section preview-section">
+              <div class="preview-info">
+                <h3>5. Pré-visualização e valor estimado</h3>
+                <p class="estimate-text">
+                  Valor estimado:
+                  <span id="estimateValue">R$ 0,00</span>
+                </p>
+                <p class="estimate-note">
+                  * Valor aproximado para referência. O orçamento final será
+                  confirmado pelo marceneiro.
+                </p>
+                <div class="actions-row">
+                  <button
+                    type="button"
+                    id="btnGenerateSummary"
+                    class="btn primary"
+                  >
+                    Gerar resumo do pedido
+                  </button>
+                </div>
+              </div>
+
+              <div class="preview-3d-wrapper">
+                <div class="preview-3d-header">
+                  <h4>Pré-visualização 3D (móvel aproximado)</h4>
+                  <button
+                    type="button"
+                    id="btnToggleFullscreen"
+                    class="btn secondary btn-3d-fullscreen"
+                  >
+                    Tela cheia
+                  </button>
+                </div>
+
+                <div id="preview3d" class="preview-3d">
+                  <span class="preview-placeholder">
+                    O móvel será exibido aqui em 3D.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- RESUMO / DOCUMENTO DE REQUISITOS -->
+      <section id="summary" class="section">
+        <div class="container">
+          <header class="section-header">
+            <h2>Documento de Requisitos</h2>
+            <p>Revise o pedido e envie para o marceneiro.</p>
+          </header>
+
+          <div id="summaryCard" class="card summary-card summary-empty">
+            <p>
+              Ainda não há um resumo gerado. Preencha o formulário acima e
+              clique em
+              <strong>"Gerar resumo do pedido"</strong>.
+            </p>
+          </div>
+
+          <div class="actions-row summary-actions">
+            <button
+              type="button"
+              id="btnDownloadTxt"
+              class="btn secondary"
+              disabled
+            >
+              Baixar requisitos (.txt)
+            </button>
+            <button
+              type="button"
+              id="btnSendWhatsApp"
+              class="btn whatsapp"
+              disabled
+            >
+              Enviar para WhatsApp
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>
+          © <span id="yearSpan"></span> Marcenaria Sob Medida. Todos os direitos
+          reservados.
+        </p>
+      </div>
+    </footer>
+    <!-- Modal de portfólio -->
+    <div id="portfolioModal" class="modal hidden">
+      <div class="modal-backdrop"></div>
+
+      <div class="modal-dialog">
+        <button type="button" class="modal-close" id="portfolioModalClose">
+          ×
+        </button>
+
+        <div class="modal-image-wrapper">
+          <img id="portfolioModalImage" src="" alt="Projeto do portfólio" />
+        </div>
+
+        <div class="modal-body">
+          <h3 id="portfolioModalTitle"></h3>
+          <p id="portfolioModalInfo" class="modal-info"></p>
+
+          <button type="button" id="btnUseFromModal" class="btn primary">
+            Usar este modelo no meu pedido
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lógica da página + Three.js via módulos -->
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>

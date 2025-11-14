@@ -1,0 +1,21 @@
+DOCUMENTO DE REQUISITOS - MÓVEL SOB MEDIDA
+--------------------------------------------
+Data do pedido: 14/11/2025
+DADOS DO CLIENTE
+Nome: Luiz Elino Machado Borba
+Telefone/WhatsApp: 34996949389
+Endereço: Rua Leopoldo Bulhões 1041
+DADOS DO MÓVEL
+Tipo de móvel: Escrivaninha
+Ambiente: Escritório
+Medidas: 150 cm (L) x 78 cm (A) x 55 cm (P)
+Material: MDF branco
+Acabamento: Fosco
+Complexidade: Médio
+Observações do cliente: Baseado no modelo do portfólio: Escrivaninha com nichos (Medidas: 1,50m (L) x 0,78m (A) x 0,55m (P), Ambiente: Escritório, Material: MDF branco fosco).
+VALOR DE REFERÊNCIA
+Valor estimado (aproximado): R$ 1.018,00
+OBSERVAÇÕES IMPORTANTES
+- O valor apresentado é uma referência aproximada, podendo variar conforme detalhes de execução,
+  ferragens utilizadas, prazos, condições de pagamento e visita técnica.
+- O orçamento final deverá ser confirmado diretamente com o marceneiro.
