@@ -19,7 +19,7 @@ const portfolioItems = [
     heightCm: 180,
     depthCm: 25,
     kind: "tv-panel",
-    priceRef: 2800,
+    priceRef: 1494,
     environment: "Sala de estar",
     material: "MDF madeirado + nichos",
     // FOTO DE UM PAINEL DE TV
@@ -33,7 +33,7 @@ const portfolioItems = [
     heightCm: 260,
     depthCm: 60,
     kind: "wardrobe",
-    priceRef: 5500,
+    priceRef: 5920,
     environment: "Quarto",
     material: "MDF branco + portas de correr",
     // FOTO DE UM GUARDA-ROUPA
@@ -47,7 +47,7 @@ const portfolioItems = [
     heightCm: 240,
     depthCm: 60,
     kind: "wall-cabinet",
-    priceRef: 7800,
+    priceRef: 7286,
     environment: "Cozinha",
     material: "MDF madeirado + nichos para forno/micro-ondas",
     // FOTO DE UMA COZINHA PLANEJADA
@@ -61,7 +61,7 @@ const portfolioItems = [
     heightCm: 78,
     depthCm: 55,
     kind: "desk",
-    priceRef: 1600,
+    priceRef: 1018,
     environment: "Escritório",
     material: "MDF branco fosco",
     // FOTO DE UMA ESCRIVANINHA/ESTAÇÃO DE TRABALHO
